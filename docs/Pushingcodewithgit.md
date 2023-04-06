@@ -18,7 +18,7 @@ Once you have created your code and you are happy with it, you can push the code
 !!!tip
     you should name your remote repository with a unique name becuase it will be easier to find the repository on Github if you have multiple projects that is going on. 
 
-## Connect the Local Repository to the Repmote Repository
+## Connect the Local Repository to the Remote Repository
 Type the following commands inside the terminal but don't run it just yet.
 
 ```text
@@ -45,8 +45,9 @@ Now that you have added a remote repository, you can send your latest code by us
 
 `git push` is a command that takes two arguments:
 
-#### 1\. the first arguments is the name of the remote repository.
-#### 2\. the second argument is the branch name of the remote repository.
+**1\. The first arguments is the name of the remote repository.**
+
+**2\. The second argument is the branch name of the remote repository.**
 
 `origin` is just an alias name or "short name" that refers to the repository name.
 
@@ -68,9 +69,11 @@ git push -u origin main
 !!! note
     When you push your code up to the newly added remote repository, using the `-u` will tell Git to save the repository as the default push destination for your current branch. Meaning everytime you push your code to the main or master branch you will only need to run `git push` instead of `git push origin main` (or `git push origin master`).
 
+Now go back to the browser and refresh the page, you can see the latest version of your remote repository.
+
 ## Conclusion
 
-Congratulation, you have successfully uploaded your code to the Remote Repository with git.
+Congratulation 🎉, you have successfully uploaded your code to the Remote Repository with git.
 
 - [x] learned what is remote repository is.
 - [x] Learned how to use `git push` and pushed to the remote repository.
