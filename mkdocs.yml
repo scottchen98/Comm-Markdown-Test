@@ -1,0 +1,66 @@
+site_name: Intro To Git Documentation
+
+nav:
+  - Home: index.md
+  - Git Basics: Gitbasics.md
+  - Pushing Code With Git: Pushingcodewithgit.md
+  - Version Control: Versioncontrol.md
+  - Trouble Shooting: TroubleShooting.md
+  - Glossary: Glossary.md
+
+theme:
+  name: material
+  features:
+    - toc.integrate
+    - navigation.footer
+    - content.code.copy
+    - header.autohide
+    - announce.dismiss
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/scottchen98/Comm-Markdown-Test
+    - icon: fontawesome/brands/twitter
+icon:
+  repo: fontawesome/brands/github
+
+repo_name: scottchen/intro-to-git-documentation
+repo_url: https://github.com/scottchen98/Comm-Markdown-Test
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - attr_list
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Copyright © 2023 - Jerry Fan + Scott Chen
