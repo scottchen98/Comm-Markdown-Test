@@ -329,6 +329,33 @@
     Sending Your Code to the Remote Repository
   </a>
   
+    <nav class="md-nav" aria-label="Sending Your Code to the Remote Repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-first-arguments-is-the-name-of-the-remote-repository" class="md-nav__link">
+    1. the first arguments is the name of the remote repository.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-second-argument-is-the-branch-name-of-the-remote-repository" class="md-nav__link">
+    2. the second argument is the branch name of the remote repository.
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
 </li>
       
     </ul>
@@ -347,23 +374,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Versioncontrol.md" class="md-nav__link">
-        Version Control
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../TroubleShooting/" class="md-nav__link">
-        Trouble Shooting
+        Troubleshooting
       </a>
     </li>
   
@@ -403,7 +415,7 @@
 
 
 <h1 id="overview">Overview</h1>
-<p>Once you have created your code and you are happy with it, you can push the code to the remote repository</p>
+<p>Once you have created your code and you are happy with it, you can push the code to the remote repository.</p>
 <h2 id="learning-outcome">Learning Outcome</h2>
 <ul>
 <li>How to create a remote repository.</li>
@@ -423,46 +435,46 @@
 <p>you should name your remote repository with a unique name becuase it will be easier to find the repository on Github if you have multiple projects that is going on. </p>
 </div>
 <h2 id="connect-the-local-repository-to-the-repmote-repository">Connect the Local Repository to the Repmote Repository</h2>
-<p>Type the following commands inside the terminal.</p>
+<p>Type the following commands inside the terminal but don't run it just yet.</p>
 <div class="highlight"><pre><span></span><code>git remote add origin https://github.com/&lt;Your_username&gt;/&lt;your_repository_name.git&gt;
-git push -u origin main
 </code></pre></div>
+<p><code>git remote</code> is a command that will list all the remotes that is available on your Git repository that is running behind the scene.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you run the command <code>git remote</code> without the <code>add origin</code> follow by the url in your terminal nothing happens. This is because you have not set your remote repository as the remote to your local repository. </p>
+</div>
+<p>To set the remote type, enter <code>git remote add origin</code> followed by a space and paste in the URL that you see above.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>replace <code>&lt;Your_username&gt;</code> and <code>&lt;your_repository_name.git&gt;</code> name with your username and repository name that you assigned.</p>
+<p>Replace <code>&lt;Your_username&gt;</code> and <code>&lt;your_repository_name.git&gt;</code> name with your username and repository name that you assigned.</p>
+<p>Ensure that you have replaced the necessary information in the GitHub URL before running the command.</p>
 </div>
-<p><code>git remote</code> is a command that will list all the remotes that is available on your Git repository that is running beinhd the scene.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you run the command <code>git remote</code> without the <code>add origin</code> follow by the url in your terminal nothing happends. This is because you have not set your remote repository as the remote to your local repository. </p>
-</div>
-<p>To sent the remote type, enter <code>git remote add origin</code> followed by a space and paste in the URL that you see above.</p>
+<p>Now, you can run the <code>git remote add origin</code> command.</p>
 <h2 id="sending-your-code-to-the-remote-repository">Sending Your Code to the Remote Repository</h2>
 <p>Now that you have added a remote repository, you can send your latest code by using <code>git push</code>.</p>
-<p><code>git push</code> command takes two arguments. 
- 1. the first arguments is the name of the remote repository.
- 2. the second argument is the branch name of the remote repository.</p>
-<p><code>origin</code> is just an alias name or "short name" that refers to the reopsitory name.</p>
+<p><code>git push</code> is a command that takes two arguments:</p>
+<h4 id="1-the-first-arguments-is-the-name-of-the-remote-repository">1. the first arguments is the name of the remote repository.</h4>
+<h4 id="2-the-second-argument-is-the-branch-name-of-the-remote-repository">2. the second argument is the branch name of the remote repository.</h4>
+<p><code>origin</code> is just an alias name or "short name" that refers to the repository name.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can change <code>origin</code> to any name that you want to be.
+<p>You can change <code>origin</code> to any name that you want to be. For example, we changed <code>origin</code> to <code>apple</code>:
 <div class="highlight"><pre><span></span><code>git remote add apple https://github.com/&lt;Your_username&gt;/&lt;your_repository_name.git&gt;
 git push -u apple main
 </code></pre></div></p>
 </div>
-<p>To push your code to the remote repository to GitHub, run this command.
-<div class="highlight"><pre><span></span><code>git push -u origin master
-</code></pre></div></p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>When you push your code up to the newly added remote repository, using the <code>-u</code> will tell Git to save the repository as the default push destination for your current branch. Meaning everytime you push your code to the main or master branch you will only need to run <code>git push</code> instead of <code>git push origin master or main</code>. </p>
+<p>To push your code to the remote repository to GitHub, run this command.</p>
+<div class="highlight"><pre><span></span><code>git push -u origin main
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you push your code up to the newly added remote repository, using the <code>-u</code> will tell Git to save the repository as the default push destination for your current branch. Meaning everytime you push your code to the main or master branch you will only need to run <code>git push</code> instead of <code>git push origin main</code> (or <code>git push origin master</code>).</p>
 </div>
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion</h2>
 <p>Congratulation, you have successfully uploaded your code to the Remote Repository with git.</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> learned what is remote repository is.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Learned how to use <code>git push</code> and pushed to the remote repository.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> </li>
 </ul>
 
 
@@ -501,13 +513,13 @@ git push -u apple main
         
         
           
-          <a href="../TroubleShooting/" class="md-footer__link md-footer__link--next" aria-label="Next: Trouble Shooting" rel="next">
+          <a href="../TroubleShooting/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Trouble Shooting
+                Troubleshooting
               </div>
             </div>
             <div class="md-footer__button md-icon">
