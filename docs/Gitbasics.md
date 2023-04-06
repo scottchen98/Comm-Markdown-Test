@@ -161,6 +161,7 @@ nothing to commit, working tree clean
 We see that our `main` (or maybe `master` on yours) branch has nothing to commit and is up to date.
 
 ## Conclusion
+
 By the end of this section, you will have successfully learned the following:
 
 - [x] Make a new Git repository out of a directory using `git init`

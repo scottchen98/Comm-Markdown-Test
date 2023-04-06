@@ -6,7 +6,7 @@
 | GitHub       | A cloud-hosting service that allows you to store files remotely and work collaboratively on projects|
 | Local Repository    | A Git repository that resides on your computer  |
 | Main (or Master)       | The default branch name when the initial branch is created  |
-| Remote Repository    | A repository hosted on a remote server that is accessible for everyone  |
+| Remote Repository    | A repository hosted on a remote server that allows developers to collaborate on a project if the repository is public |
 | Working directory     | Your project folder on your computer |
 
 | Commands        | Description                          |
@@ -20,5 +20,5 @@
 | `git remote add origin git@github.com:username/example_repo.git`  | Creates a new remote called `origin` located at the URL `git@github.com:username/example_repo.git`. `origin` is a standard convention used as a shorthand name for the repository's URL `git@github.com:username/example_repo.git`  |
 | `git status`      | Displays the current state of the working directory and staging area. Any staged/unstaged changes or tracked/untracked files will be shown  |
 | `git --version`      | Checks the current Git version installed on your device   |
-| `mkdir`      | Creates new directories     |
-| `touch`      | Creates new empty files   |
+| `mkdir <directory_name here>`      | Creates new directories or folder in a file system    |
+| `touch <filename here>`      | Creates new empty files in a file system  |

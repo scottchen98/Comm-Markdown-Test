@@ -4,8 +4,7 @@ nav:
   - Home: index.md
   - Git Basics: Gitbasics.md
   - Pushing Code With Git: Pushingcodewithgit.md
-  - Version Control: Versioncontrol.md
-  - Trouble Shooting: TroubleShooting.md
+  - Troubleshooting: TroubleShooting.md
   - Glossary: Glossary.md
 
 theme:
