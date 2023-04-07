@@ -70,7 +70,7 @@ Each possible message block, from most important to least important:
 
 
 
-# Overview of Express User Documentation
+# Overview of Git User Documentation
 
 Welcome! 👋 This documentation will guide you through setting up Local and [**GitHub**](https://github.com) repositories through the Command-Line Interface (CLI).
 
@@ -92,7 +92,7 @@ We used Git and GitHub to collaborate on the documentation. We divided the tasks
 
 ## How We Created Our Guide
 
-Our guide was created using our knowledge from setting up and using Express servers in COMP 2340 Collaboration Tools. We referenced the official [Git](https://git-scm.com/doc) and [GitHub](https://docs.github.com/en) to supplement our experiential knowledge.
+Our guide was created using our knowledge from setting up and using Git in COMP 2340 Collaboration Tools. We referenced the official [Git](https://git-scm.com/doc) and [GitHub](https://docs.github.com/en) to supplement our experiential knowledge.
 
 ### Using MkDocs
 
@@ -105,12 +105,6 @@ This was the first time writing extensively in markdown for both of us. We learn
 ### Using VS Code
 
 All the members of the group used VS Code to write our markdown files. We previewed the markdown using VS Code's built-in markdown preview, but we had to serve our guide with MkDocs to see the accurate rendering of our styles.
-
-### Using a Style Guide
-
-We loosely used the [Google Developer Documentation Style Guide](https://developers.google.com/style) to give our writing uniformity. We had previously used this style guide and its clear documentation made it an attractive style guide to reference.
-
-We used codeblocks to represent Git commands as well as annotations. This allowed us to explain specific lines of code without disrupting the visual flow.
 
 ### Learning Best Practices For Web Writing
 
@@ -125,9 +119,9 @@ We ensured that every procedure page included a conclusion to summarize what the
 We used MkDocs' admonitions to highlight any information we wanted to stand out to the reader.
 
 <figure>
-  <figcaption>Specifies actions that may cause an error or will cause the application to crash.</figcaption>
+  <figcaption>Specifies actions that may cause an error.</figcaption>
   <img
-  src="docs/pages/images/admonitions/danger.png"
+  src="docs/images/warning.png"
   alt="The danger admonition.">
 </figure>
 
@@ -157,42 +151,42 @@ We used MkDocs' admonitions to highlight any information we wanted to stand out 
 <figure>
   <figcaption>Specifies content that must be read before proceeding.</figcaption>
   <img
-  src="docs/pages/images/admonitions/warning.png"
+  src="docs/images/important.png"
   alt="The warning admonition.">
 </figure>
 <figure>
-  <figcaption>Indicates additional information or tips.</figcaption>
+  <figcaption>Indicates a tip.</figcaption>
   <img
-  src="docs/pages/images/admonitions/info.png"
+  src="docs/images/tip.png"
   alt="The info admonition.">
 </figure>
 <figure>
-  <figcaption>Indicates what success looks like.</figcaption>
+  <figcaption>Indicates what additional information looks like.</figcaption>
   <img
-  src="docs/pages/images/admonitions/success.png"
+  src="docs/images/note.png"
   alt="The success admonition.">
 </figure>
 
 #### Chunking
 
-Due to the nature of our topic, we anticipated long informative pages. This can easily become difficult for a reader to follow. Knowing this, we focused on using sub-headings and figures to guide the reader.
+Given the nature of our topic, we expected lengthy informative pages, which can be challenging for readers to follow. To address this, we used subheadings and figures to guide our readers.
 
-We chose a navigation style (from MkDocs) that would show the subheadings for the current page as nested links. This allows our reader to gauge the relevancy of the material and to jump to a specific section if they desired.
+We opted for a navigation style (from MkDocs) that displays subheadings as nested links. This enables our readers to assess the relevance of the material and navigate to a particular section if desired.
 
 #### Tone
 
-This documentation is intended for the following users who are searching for a clear guide to using Git and setting up a GitHub repository:
+This documentation is written for users who need a clear guide to using Git and setting up a GitHub repository.
 
-- Beginner to intermediate developers who need to keep track of their source code.
+- It is intended for beginner to intermediate developers who want to keep track of their source code.
 
-Therefore, we chose to write in a casual tone as if we were explaining to a peer. We kept the jargon to a minimal as we did not want to confuse any beginner coders. Any specialized terminology included a hyperlink to an external resource if the reader needed further explanation.
+ We have chosen a casual tone, as if we were explaining to a colleague, and have minimized the use of jargon to avoid confusing anyone new to coding. If we include any specialized terminology, we provide a hyperlink to an external resource for further explanation.
 
 ## Conclusion
 
-This documentation recorded our understanding of Git/Github. The topic was tedious for us to write because we had to repeat the same Git command multiple times to ensure the user sees the file changes. Writing this documentation presented us the opportunity to practice writing clear instructions for our intended audience to read off the web.
+This documentation captures our understanding of Git/Github. Writing about the topic was a bit tedious, as we had to repeat the same Git commands multiple times to ensure that the user sees the file changes. Nevertheless, it presented an opportunity for us to practice writing clear instructions for our intended audience.
 
-This project tested our group's ability to communicate. As a group, we had an open line of communication where we regularly updated each other on our progress. Through solid teamwork, we helped each other adhere to a common style guide.
+This project tested our group's ability to communicate. We maintained an open line of communication throughout and regularly updated each other on our progress. Through solid teamwork, we were able to adhere to a common style guide.
 
-Thank you for your interest in our Git Documentation. We hope this documentation can be a good reference for our readers and for ourselves in future projects.
+Thank you for your interest in our Git Documentation. We hope it can serve as a useful reference for our readers and for ourselves in future projects.
 
 This document was built on: [Material for MkDocs](https://github.com/squidfunk/mkdocs-material)
